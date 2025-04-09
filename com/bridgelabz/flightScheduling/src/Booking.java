@@ -1,6 +1,6 @@
 package com.bridgelabz.flightScheduling.src;
 
-class Booking<T> {
+class Booking<T>{
     private T bookingId;
     private Flight<?> flight;
     private String passengerName;
@@ -11,9 +11,29 @@ class Booking<T> {
         this.passengerName = passengerName;
     }
 
-    public void displayBookingInfo() {
+    public void displayBookingInfo(){
         System.out.println("Booking ID: " + bookingId);
         System.out.println("Passenger: " + passengerName);
         flight.displayFlightInfo();
     }
+
 }
+
+
+//class Booking<T> {
+//    private T bookingId;
+//    private Flight<?> flight;
+//    private String passengerName;
+//
+//    public Booking(T bookingId, Flight<?> flight, String passengerName) {
+//        this.bookingId = bookingId;
+//        this.flight = flight;
+//        this.passengerName = passengerName;
+//    }
+//
+//    public void displayBookingInfo() {
+//        System.out.println("Booking ID: " + bookingId);
+//        System.out.println("Passenger: " + passengerName);
+//        flight.displayFlightInfo();
+//    }
+//}
